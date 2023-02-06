@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="acercarse.png" />
+    <None Remove="ayuda.png" />
+    <None Remove="buscar.png" />
+    <None Remove="busqueda.png" />
+    <None Remove="Captura.png" />
+    <None Remove="cerrar-sesion.png" />
+    <None Remove="gira-a-la-derecha.png" />
+    <None Remove="girar-a-la-izquierda.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="acercarse.png" />
+    <Resource Include="ayuda.png" />
+    <Resource Include="buscar.png" />
+    <Resource Include="busqueda.png" />
+    <Resource Include="Captura.png" />
+    <Resource Include="cerrar-sesion.png" />
+    <Resource Include="gira-a-la-derecha.png" />
+    <Resource Include="girar-a-la-izquierda.png" />
+  </ItemGroup>
+
+</Project>
