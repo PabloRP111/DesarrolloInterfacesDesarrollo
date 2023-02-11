@@ -49,7 +49,7 @@
                 <ImageBrush ImageSource="/cerrar-sesion.png"/>
             </Button.Background>
         </Button>
-        <Button  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="374,10,112,0">
+        <Button x:Name="btnLupa" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="374,10,112,0">
             <Button.Background>
                 <ImageBrush ImageSource="/busqueda.png"/>
             </Button.Background>
