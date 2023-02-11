@@ -27,6 +27,7 @@ namespace EditorImagenes
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             System.Windows.Controls.Button clickedButton = (System.Windows.Controls.Button)sender;
 
             switch (clickedButton.Name)
@@ -50,6 +51,8 @@ namespace EditorImagenes
                     break;
             }
 
+=======
+>>>>>>> parent of 776c200 (Botones rotación funcionales)
 
         }
     }

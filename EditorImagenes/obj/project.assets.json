@@ -8,11 +8,16 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\asrau\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Abel\\.nuget\\packages\\": {}
+>>>>>>> parent of 776c200 (Botones rotación funcionales)
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\asrau\\Desktop\\2ºDAM\\Desarrollo Interfaces\\Desarrollo_Interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
       "projectName": "EditorImagenes",
       "projectPath": "C:\\Users\\asrau\\Desktop\\2ºDAM\\Desarrollo Interfaces\\Desarrollo_Interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
@@ -21,6 +26,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asrau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\Abel\\Desktop\\EditorImagenes\\EditorImagenes.csproj",
+      "projectName": "EditorImagenes",
+      "projectPath": "C:\\Users\\Abel\\Desktop\\EditorImagenes\\EditorImagenes.csproj",
+      "packagesPath": "C:\\Users\\Abel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Abel\\Desktop\\EditorImagenes\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> parent of 776c200 (Botones rotación funcionales)
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -82,7 +97,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

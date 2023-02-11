@@ -12,8 +12,13 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\asrau\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\asrau\\.nuget\\packages"
+=======
+      "C:\\Users\\Abel\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Abel\\.nuget\\packages"
+>>>>>>> parent of 776c200 (Botones rotación funcionales)
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
