@@ -24,6 +24,19 @@ namespace EditorImagenes
     {
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Button clickedButton = (Button)sender;
+
+            switch (clickedButton.Name)
+            {
+                case "bIzquierda":
+                    RotationTransform.Angle += 90;
+                    break;
+
+                case "bDerecha":
+                    RotationTransform.Angle -= 90;
+                    break;
+            }
+            
 
         }
     }

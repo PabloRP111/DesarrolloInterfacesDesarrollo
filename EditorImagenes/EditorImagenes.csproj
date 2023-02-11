@@ -16,6 +16,11 @@
     <None Remove="cerrar-sesion.png" />
     <None Remove="gira-a-la-derecha.png" />
     <None Remove="girar-a-la-izquierda.png" />
+    <None Remove="Placeholder_view_vector.svg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Placeholder_view_vector.svg.png" />
   </ItemGroup>
 
   <ItemGroup>
