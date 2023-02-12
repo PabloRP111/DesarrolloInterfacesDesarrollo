@@ -16,16 +16,14 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Path = System.IO.Path;
+using Application = System.Windows.Forms.Application;
 
 namespace EditorImagenes
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
-        
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Controls.Button clickedButton = (System.Windows.Controls.Button)sender;
@@ -36,13 +34,12 @@ namespace EditorImagenes
                 case "bIzquierda":
                     RotationTransform.Angle -= 90;
                     break;
- 
+
                 case "bDerecha":
                     RotationTransform.Angle += 90;
                     break;
 
                 case "btnLupa":
-
                     using (var fd = new FolderBrowserDialog())
                     {
                         if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(fd.SelectedPath))
@@ -51,19 +48,17 @@ namespace EditorImagenes
                         }
                     }
                     break;
+
+                case "btnGuia":
+                    string pdfPath = Path.Combine(Application.StartupPath, "GuiaUsuario.pdf");
+                    Process.Start(pdfPath);
+                    break;
+
+
             }
 
 
-            
-
         }
 
-        private void boton_guia_Click(object sender, RoutedEventArgs e)
-        {
-
-            Process.Start("C:\\Users\\USUARIO\\Documents\\interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\Guiausuario.pdf");
-
-
-        }
     }
 }
