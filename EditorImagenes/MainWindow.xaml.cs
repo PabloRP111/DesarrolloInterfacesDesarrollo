@@ -12,9 +12,9 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Forms;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
 
 namespace EditorImagenes
 {
@@ -23,36 +23,35 @@ namespace EditorImagenes
     /// </summary>
     public partial class MainWindow : Window
     {
-        String imgRuta = "";
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
             System.Windows.Controls.Button clickedButton = (System.Windows.Controls.Button)sender;
+            String imgRuta = "";
 
             switch (clickedButton.Name)
             {
                 case "bIzquierda":
+                    RotationTransform.Angle -= 90;
+                    break;
+ 
+                case "bDerecha":
                     RotationTransform.Angle += 90;
                     break;
 
-                case "bDerecha":
-                    RotationTransform.Angle -= 90;
-                    break;
                 case "btnLupa":
-                   
+
                     using (var fd = new FolderBrowserDialog())
                     {
                         if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(fd.SelectedPath))
                         {
-                            imgRuta= fd.SelectedPath;
+                            imgRuta = fd.SelectedPath;
                         }
                     }
                     break;
             }
 
-=======
->>>>>>> parent of 776c200 (Botones rotación funcionales)
+
+            
 
         }
     }

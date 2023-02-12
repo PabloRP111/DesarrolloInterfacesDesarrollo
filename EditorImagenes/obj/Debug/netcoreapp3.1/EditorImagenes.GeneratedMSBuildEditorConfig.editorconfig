@@ -1,9 +1,9 @@
 is_global = true
 build_property.ApplicationManifest = 
-build_property.StartupObject = EditorImagenes.App
+build_property.StartupObject = 
 build_property.ApplicationDefaultFont = 
 build_property.ApplicationHighDpiMode = 
 build_property.ApplicationUseCompatibleTextRendering = 
 build_property.ApplicationVisualStyles = 
 build_property.RootNamespace = EditorImagenes
-build_property.ProjectDir = C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\
+build_property.ProjectDir = C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\

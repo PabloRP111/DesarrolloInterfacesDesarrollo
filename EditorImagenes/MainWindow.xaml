@@ -14,14 +14,17 @@
         <TreeView x:Name="treeView_Copy" Margin="0,64,0,32" HorizontalAlignment="Center" Width="402" Grid.Column="1" Background="#FFB6EDFF" >
 
         </TreeView>
-        <Image Height="142" VerticalAlignment="Top" Grid.Column="1" Margin="103,141,100,0"/>
-
-        <Button  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="276,379,211,0">
+        <Image x:Name="imagen" Height="142" VerticalAlignment="Top" Grid.Column="1"  Margin="103,141,100,0" Source="/Placeholder_view_vector.svg.png" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <RotateTransform x:Name="RotationTransform" CenterX="0" CenterY="0"/>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="bIzquierda" Content="Rotate" Click="Button_Click"  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="276,379,211,0">
             <Button.Background>
                 <ImageBrush ImageSource="/girar-a-la-izquierda.png"/>
             </Button.Background>
         </Button>
-        <Button  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="322,379,169,0">
+        <Button x:Name="bDerecha" Content="Rotate" Click="Button_Click"  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="322,379,169,0">
             <Button.Background>
                 <ImageBrush ImageSource="/gira-a-la-derecha.png"/>
             </Button.Background>
@@ -46,7 +49,7 @@
                 <ImageBrush ImageSource="/cerrar-sesion.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnLupa" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="374,10,112,0">
+        <Button  x:Name="btnLupa" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="374,10,112,0">
             <Button.Background>
                 <ImageBrush ImageSource="/busqueda.png"/>
             </Button.Background>
@@ -61,6 +64,7 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
+        
 
 
     </Grid>

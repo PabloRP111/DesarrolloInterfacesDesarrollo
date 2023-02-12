@@ -1,20 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "eZy85runk1DOG/s7KBuQwlAameIA6GGjMaq7w52sfk+V3/00kZvRi1QnBvOlmKhoqnMMuoxcKyEZQyiomVc96A==",
+  "dgSpecHash": "atfy6QB1TDyylr/X3D1/Y+K5lFxMPs7oG5LELiEeahFFimWdg5r1FsEf7w3dFHRuTRaT5ZTQy3pZVZD6CKvO0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\asrau\\Desktop\\2ºDAM\\Desarrollo Interfaces\\Desarrollo_Interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\asrau\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\asrau\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\asrau\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\asrau\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
-  ],
-=======
-  "dgSpecHash": "AVZ75ysoxyf5Ae7eTAZa9Is9U3nu79jrSlKf/y4QEDasnYVDmp+mrahcSGnDXWZatymEgAtTDuHhIAfeOwe4QA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Abel\\Desktop\\EditorImagenes\\EditorImagenes.csproj",
+  "projectFilePath": "C:\\Users\\Javi\\Documents\\GitHub\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
   "expectedPackageFiles": [],
->>>>>>> parent of 776c200 (Botones rotación funcionales)
   "logs": []
 }

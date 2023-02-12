@@ -1,20 +1,20 @@
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.exe
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.deps.json
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.runtimeconfig.json
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.runtimeconfig.dev.json
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.dll
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.pdb
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.csproj.AssemblyReference.cache
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\App.g.cs
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes_MarkupCompile.cache
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes_MarkupCompile.lref
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\MainWindow.baml
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.g.resources
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.AssemblyInfoInputs.cache
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.AssemblyInfo.cs
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.csproj.CoreCompileInputs.cache
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.dll
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.pdb
-C:\Users\asrau\Desktop\2ºDAM\Desarrollo Interfaces\Desarrollo_Interfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.genruntimeconfig.cache
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.csproj.AssemblyReference.cache
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes_MarkupCompile.cache
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes_MarkupCompile.lref
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.exe
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.deps.json
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.runtimeconfig.json
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.runtimeconfig.dev.json
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.dll
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\netcoreapp3.1\EditorImagenes.pdb
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.g.resources
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.AssemblyInfoInputs.cache
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.AssemblyInfo.cs
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.csproj.CoreCompileInputs.cache
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.dll
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.pdb
+C:\Users\Javi\Documents\GitHub\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\netcoreapp3.1\EditorImagenes.genruntimeconfig.cache
