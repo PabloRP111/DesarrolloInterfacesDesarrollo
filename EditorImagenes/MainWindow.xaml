@@ -59,7 +59,7 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <Button x:Name="boton_guia" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="423,9,0,0" VerticalAlignment="Top" Height="35" FontFamily="Cambria" Width="50" Click="boton_guia_Click">
+        <Button x:Name="boton_guia" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="426,10,10,0" VerticalAlignment="Top" Height="33" FontFamily="Cambria" Width="47" Click="boton_guia_Click" RenderTransformOrigin="0.574,0.91">
             <Button.Background>
                 <ImageBrush ImageSource="/ayuda.png"/>
             </Button.Background>

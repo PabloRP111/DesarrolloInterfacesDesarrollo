@@ -24,6 +24,8 @@ namespace EditorImagenes
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Controls.Button clickedButton = (System.Windows.Controls.Button)sender;
@@ -59,7 +61,8 @@ namespace EditorImagenes
         private void boton_guia_Click(object sender, RoutedEventArgs e)
         {
 
-            Process.Start("C:\\Users\\USUARIO\\Documents\\interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\GuiaUsuario.pdf");
+            Process.Start("C:\\Users\\USUARIO\\Documents\\interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\Guiausuario.pdf");
+
 
         }
     }
