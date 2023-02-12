@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace EditorImagenes
 {
@@ -52,6 +53,13 @@ namespace EditorImagenes
 
 
             
+
+        }
+
+        private void boton_guia_Click(object sender, RoutedEventArgs e)
+        {
+
+            Process.Start("C:\\Users\\USUARIO\\Documents\\interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\GuiaUsuario.pdf");
 
         }
     }

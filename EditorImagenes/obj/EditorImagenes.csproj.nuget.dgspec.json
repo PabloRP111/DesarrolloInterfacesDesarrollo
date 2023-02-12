@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Javi\\Documents\\GitHub\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj": {}
+    "C:\\Users\\USUARIO\\Documents\\interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Javi\\Documents\\GitHub\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Javi\\Documents\\GitHub\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
         "projectName": "EditorImagenes",
-        "projectPath": "C:\\Users\\Javi\\Documents\\GitHub\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
-        "packagesPath": "C:\\Users\\Javi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Javi\\Documents\\GitHub\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\interfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Javi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

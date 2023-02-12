@@ -39,11 +39,6 @@
                 <ImageBrush ImageSource="/buscar.png"/>
             </Button.Background>
         </Button>
-        <Button  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="421,10,66,0">
-            <Button.Background>
-                <ImageBrush ImageSource="/ayuda.png"/>
-            </Button.Background>
-        </Button>
         <Button  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="476,10,10,0">
             <Button.Background>
                 <ImageBrush ImageSource="/cerrar-sesion.png"/>
@@ -64,7 +59,12 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        
+        <Button x:Name="boton_guia" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="423,9,0,0" VerticalAlignment="Top" Height="35" FontFamily="Cambria" Width="50" Click="boton_guia_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/ayuda.png"/>
+            </Button.Background>
+        </Button>
+
 
 
     </Grid>
