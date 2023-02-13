@@ -11,14 +11,15 @@
             <ColumnDefinition Width="367" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <TreeView x:Name="treeView_Copy" Margin="0,64,0,32" HorizontalAlignment="Center" Width="402" Grid.Column="1" Background="#FFB6EDFF" >
-
+        <TreeView x:Name="treeView_Copy" Margin="69,46,0,50" HorizontalAlignment="Left" Width="433" Grid.Column="1" Background="#FFB6EDFF" >
+            <ScrollViewer Height="323" Width="389">
+                <Image x:Name="imagen" Height="361" Source="/Placeholder_view_vector.svg.png" RenderTransformOrigin="0.5,0.5" Width="378" >
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="RotationTransform" CenterX="0" CenterY="0"/>
+                    </Image.RenderTransform>
+                </Image>
+            </ScrollViewer>
         </TreeView>
-        <Image x:Name="imagen" Height="142" VerticalAlignment="Top" Grid.Column="1"  Margin="103,141,100,0" Source="/Placeholder_view_vector.svg.png" RenderTransformOrigin="0.5,0.5" >
-            <Image.RenderTransform>
-                <RotateTransform x:Name="RotationTransform" CenterX="0" CenterY="0"/>
-            </Image.RenderTransform>
-        </Image>
         <Button x:Name="bIzquierda" Content="Rotate" Click="Button_Click"  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="276,379,211,0">
             <Button.Background>
                 <ImageBrush ImageSource="/girar-a-la-izquierda.png"/>
@@ -29,17 +30,17 @@
                 <ImageBrush ImageSource="/gira-a-la-derecha.png"/>
             </Button.Background>
         </Button>
-        <Button  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="364,379,127,0">
+        <Button  x:Name="bZoomMas" Click="Button_Click" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="364,379,127,0">
             <Button.Background>
                 <ImageBrush ImageSource="/acercarse.png"/>
             </Button.Background>
         </Button>
-        <Button  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="404,379,87,0">
+        <Button x:Name="bZoomMenos" Click="Button_Click" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="404,379,87,0">
             <Button.Background>
                 <ImageBrush ImageSource="/buscar.png"/>
             </Button.Background>
         </Button>
-        <Button  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="476,10,10,0">
+        <Button   x:Name="bSalir" Click="Button_Click" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="476,10,10,0">
             <Button.Background>
                 <ImageBrush ImageSource="/cerrar-sesion.png"/>
             </Button.Background>
