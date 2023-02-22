@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EditorImagenes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="900" ResizeMode="CanMinimize">
+        Title="MainWindow" Height="520" Width="920" ResizeMode="CanMinimize">
     <Grid Background="#FF96A1FF">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="367" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <TreeView x:Name="treeView_Copy" Margin="69,46,0,50" HorizontalAlignment="Left" Width="433" Grid.Column="1" Background="#FFB6EDFF" >
+        <TreeView x:Name="treeView_Copy" Margin="70,69,0,27" HorizontalAlignment="Left" Width="432" Grid.Column="1" Background="#FFB6EDFF" >
             <ScrollViewer Height="323" Width="389">
                 <Image x:Name="imagen" Height="361" Source="/Placeholder_view_vector.svg.png" RenderTransformOrigin="0.5,0.5" Width="378" >
                     <Image.RenderTransform>
@@ -20,51 +20,46 @@
                 </Image>
             </ScrollViewer>
         </TreeView>
-        <Button x:Name="bIzquierda" Content="Rotate" Click="Button_Click"  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="276,379,211,0">
+        <Button x:Name="bIzquierda" Click="Button_Click"  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="282,414,205,0" BorderThickness="0,0,0,0">
             <Button.Background>
-                <ImageBrush ImageSource="/girar-a-la-izquierda.png"/>
+                <ImageBrush ImageSource="/flechaCurvaIzquierda.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="bDerecha" Content="Rotate" Click="Button_Click"  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="322,379,169,0">
+        <Button x:Name="bDerecha" Click="Button_Click"  VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="336,414,155,0" BorderThickness="0,0,0,0">
             <Button.Background>
-                <ImageBrush ImageSource="/gira-a-la-derecha.png"/>
+                <ImageBrush ImageSource="/flechaCurvaDerecha.png"/>
             </Button.Background>
         </Button>
-        <Button  x:Name="bZoomMas" Click="Button_Click" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="364,379,127,0">
+        <Button  x:Name="bZoomMas" Click="Button_Click" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="386,415,105,0" BorderThickness="0,0,0,0">
             <Button.Background>
-                <ImageBrush ImageSource="/acercarse.png"/>
+                <ImageBrush ImageSource="/zoomas.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="bZoomMenos" Click="Button_Click" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="404,379,87,0">
+        <Button x:Name="bZoomMenos" Click="Button_Click" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="437,416,54,0" BorderThickness="0,0,0,0">
             <Button.Background>
-                <ImageBrush ImageSource="/buscar.png"/>
+                <ImageBrush ImageSource="/zoomenos.png"/>
             </Button.Background>
         </Button>
-        <Button   x:Name="bSalir" Click="Button_Click" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="476,10,10,0">
+        <Button   x:Name="bSalir" Click="Button_Click" VerticalAlignment="Top" Height="50" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="473,9,10,0" BorderThickness="0,0,0,0" Width="50">
             <Button.Background>
-                <ImageBrush ImageSource="/cerrar-sesion.png"/>
+                <ImageBrush ImageSource="/Salir.png"/>
             </Button.Background>
         </Button>
-        <Button  x:Name="btnLupa" Click="Button_Click" VerticalAlignment="Top" Height="33" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="374,10,112,0">
+        <Button  x:Name="btnLupa" Click="Button_Click" VerticalAlignment="Top" Height="50" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="371,10,117,0" BorderThickness="0,0,0,0">
+            <Button.FocusVisualStyle>
+                <Style/>
+            </Button.FocusVisualStyle>
             <Button.Background>
                 <ImageBrush ImageSource="/busqueda.png"/>
             </Button.Background>
         </Button>
         <TreeView x:Name="treeView_Copy1" Margin="0,69,0,27" HorizontalAlignment="Center" Width="286" Background="White" />
-        <Label Content="SELECCIONADOR DE IMAGENES" Margin="28,10,95,420" FontWeight="Bold" FontFamily="Bahnschrift SemiBold Condensed" FontSize="24">
-            <Label.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="White"/>
-                    <GradientStop Color="White" Offset="1"/>
-                    <GradientStop Color="#FF4D9CE6" Offset="0.988"/>
-                </LinearGradientBrush>
-            </Label.Background>
-        </Label>
-        <Button x:Name="btnGuia" Click="Button_Click" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="423,9,0,0" VerticalAlignment="Top" Height="35" FontFamily="Cambria" Width="50" >
+        <Button x:Name="btnGuia" Click="Button_Click" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="423,9,0,0" VerticalAlignment="Top" Height="50" FontFamily="Cambria" Width="50" BorderThickness="0,0,0,0" >
             <Button.Background>
-                <ImageBrush ImageSource="/ayuda.png"/>
+                <ImageBrush ImageSource="/Interrogacion.png"/>
             </Button.Background>
         </Button>
+        <Image HorizontalAlignment="Left" Height="48" Margin="40,10,0,0" VerticalAlignment="Top" Width="492" Source="/titulo.png" Grid.ColumnSpan="2"/>
 
 
 

@@ -16,12 +16,25 @@
     <None Remove="busqueda.png" />
     <None Remove="Captura.png" />
     <None Remove="cerrar-sesion.png" />
+    <None Remove="flechaCurvaDerecha.png" />
+    <None Remove="flechaCurvaIzquierda.png" />
     <None Remove="gira-a-la-derecha.png" />
     <None Remove="girar-a-la-izquierda.png" />
+    <None Remove="Interrogacion.png" />
     <None Remove="Placeholder_view_vector.svg.png" />
+    <None Remove="Salir.png" />
+    <None Remove="titulo.png" />
+    <None Remove="zoomas.png" />
+    <None Remove="zoomenos.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="flechaCurvaDerecha.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="flechaCurvaIzquierda.png" />
+    <Resource Include="Interrogacion.png" />
     <Resource Include="Placeholder_view_vector.svg.png" />
   </ItemGroup>
 
@@ -34,6 +47,10 @@
     <Resource Include="cerrar-sesion.png" />
     <Resource Include="gira-a-la-derecha.png" />
     <Resource Include="girar-a-la-izquierda.png" />
+    <Resource Include="Salir.png" />
+    <Resource Include="titulo.png" />
+    <Resource Include="zoomas.png" />
+    <Resource Include="zoomenos.png" />
   </ItemGroup>
 
   <ItemGroup>
