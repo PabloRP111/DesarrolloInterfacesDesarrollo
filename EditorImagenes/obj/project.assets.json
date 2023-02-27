@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Abel\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Abel\\Documents\\Repositorios\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Módulo\\Interfaces 2T\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
       "projectName": "EditorImagenes",
-      "projectPath": "C:\\Users\\Abel\\Documents\\Repositorios\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
-      "packagesPath": "C:\\Users\\Abel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Abel\\Documents\\Repositorios\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Módulo\\Interfaces 2T\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Módulo\\Interfaces 2T\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net6.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -51,8 +51,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -64,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

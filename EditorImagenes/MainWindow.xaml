@@ -12,8 +12,11 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <TreeView x:Name="treeView_Copy" Margin="70,69,0,27" HorizontalAlignment="Left" Width="432" Grid.Column="1" Background="#FFB6EDFF" >
-            <ScrollViewer Height="323" Width="389">
-                <Image x:Name="imagen" Height="361" Source="/Placeholder_view_vector.svg.png" RenderTransformOrigin="0.5,0.5" Width="378" >
+            <ScrollViewer x:Name="scroll" Height="323" Width="389">
+                <Image x:Name="imagen" Height="361" Source="/Placeholder_view_vector.svg.png" RenderTransformOrigin="0.5,0.5" Width="378" 
+                       PreviewMouseDown="MouseDown"
+                        PreviewMouseUp="MouseUp"
+                        PreviewMouseMove="MouseMove">
                     <Image.RenderTransform>
                         <RotateTransform x:Name="RotationTransform" CenterX="0" CenterY="0"/>
                     </Image.RenderTransform>
