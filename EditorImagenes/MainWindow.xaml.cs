@@ -47,27 +47,47 @@ namespace EditorImagenes
                     break;
 
                 case "btnLupa":
-                    using (var fd = new FolderBrowserDialog())
+                    Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+                    dlg.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.bmp";
+                    if (dlg.ShowDialog() == true)
                     {
-                        if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(fd.SelectedPath))
-                        {
-                            imgRuta = fd.SelectedPath;
-                        }
+                        // Acciones a realizar con la ruta del archivo seleccionado
+                        string rutaArchivo = dlg.FileName;
+
+                        // Carga la imagen seleccionada en el control de imagen
+                        BitmapImage image = new BitmapImage();
+                        image.BeginInit();
+                        image.UriSource = new Uri(rutaArchivo);
+                        image.EndInit();
+
+                        imagen.Source = image;
+
+
                     }
                     break;
 
                 case "btnGuia":
-                    string pdfPath = Path.Combine(Application.StartupPath, "GuiaUsuario.pdf");
-                    Process.Start(pdfPath);
+                    string pdfPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "GuiaUsuario.pdf");
+                    // Se inicia el proceso de la aplicación predeterminada para abrir el archivo PDF
+                    try
+                    {
+                        Process.Start(pdfPath);
+                    }catch(Exception ex)
+    {
+                        System.Windows.MessageBox.Show("Error al abrir el archivo PDF: " + ex.Message);
+                    }
                     break;
+
                 case "bSalir":
                     this.Close();
                     break;
+
                 case "bZoomMas":
                     _scale += 0.1;
                     ScaleTransform scaleTransform = new ScaleTransform(_scale, _scale);
                     imagen.RenderTransform = scaleTransform;
                     break;
+
                 case "bZoomMenos":
                     _scale -= 0.1;
                     ScaleTransform scaleTransform2 = new ScaleTransform(_scale, _scale);
