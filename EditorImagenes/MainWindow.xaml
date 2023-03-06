@@ -56,7 +56,7 @@
                 <ImageBrush ImageSource="/busqueda.png"/>
             </Button.Background>
         </Button>
-        <TreeView x:Name="treeView_Copy1" Margin="0,69,0,27" HorizontalAlignment="Center" Width="286" Background="White">
+        <TreeView x:Name="treeView_Copy1" Margin="0,69,0,27" HorizontalAlignment="Center" Width="286" Background="White" SelectedItemChanged="seleccionImagen">
 
             <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate ItemsSource="{Binding Children}">

@@ -156,7 +156,26 @@ namespace EditorImagenes
             }
 
             treeView_Copy1.ItemsSource = new List<Folder> { root };
+            treeView_Copy1.SelectedItemChanged+= new RoutedPropertyChangedEventHandler<object>(seleccionImagen);
         }
+
+        public void seleccionImagen(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            FileSystemItem selectedItem = treeView_Copy1.SelectedItem as FileSystemItem;
+            if (selectedItem != null)
+            {
+                string selectedHeader = selectedItem.Name;
+                var rootDirectory = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory.Substring(0, AppDomain.CurrentDomain.BaseDirectory.IndexOf("bin")));
+                var miCarpetaPath = Path.Combine(rootDirectory.FullName, selectedHeader);
+                BitmapImage image = new BitmapImage();
+                image.BeginInit();
+                image.UriSource = new Uri(miCarpetaPath);
+                image.EndInit();
+
+                imagen.Source = image;
+            }
+        }
+
 
 
 

@@ -166,3 +166,24 @@ D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterface
 D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.pdb
 D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.genruntimeconfig.cache
 D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\ref\EditorImagenes.dll
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\net6.0-windows\EditorImagenes.exe
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\net6.0-windows\EditorImagenes.deps.json
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\net6.0-windows\EditorImagenes.runtimeconfig.json
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\net6.0-windows\EditorImagenes.dll
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\net6.0-windows\EditorImagenes.pdb
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.csproj.AssemblyReference.cache
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\App.g.cs
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes_MarkupCompile.cache
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes_MarkupCompile.lref
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\MainWindow.baml
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.g.resources
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.GeneratedMSBuildEditorConfig.editorconfig
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.AssemblyInfoInputs.cache
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.AssemblyInfo.cs
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.csproj.CoreCompileInputs.cache
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.dll
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\refint\EditorImagenes.dll
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.pdb
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.genruntimeconfig.cache
+C:\proyectoConjunto\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\ref\EditorImagenes.dll
