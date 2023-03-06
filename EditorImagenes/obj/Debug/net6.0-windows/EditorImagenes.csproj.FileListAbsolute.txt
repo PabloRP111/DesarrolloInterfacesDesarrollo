@@ -145,3 +145,24 @@ C:\Users\asrau\Desktop\DesarrolloInterfacesDesarrollo\DesarrolloInterfacesDesarr
 C:\Users\asrau\Desktop\DesarrolloInterfacesDesarrollo\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.pdb
 C:\Users\asrau\Desktop\DesarrolloInterfacesDesarrollo\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.genruntimeconfig.cache
 C:\Users\asrau\Desktop\DesarrolloInterfacesDesarrollo\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\ref\EditorImagenes.dll
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\net6.0-windows\EditorImagenes.exe
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\net6.0-windows\EditorImagenes.deps.json
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\net6.0-windows\EditorImagenes.runtimeconfig.json
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\net6.0-windows\EditorImagenes.dll
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\bin\Debug\net6.0-windows\EditorImagenes.pdb
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.csproj.AssemblyReference.cache
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\App.g.cs
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes_MarkupCompile.cache
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes_MarkupCompile.lref
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.g.resources
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.AssemblyInfoInputs.cache
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.AssemblyInfo.cs
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.csproj.CoreCompileInputs.cache
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.dll
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\refint\EditorImagenes.dll
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.pdb
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\EditorImagenes.genruntimeconfig.cache
+D:\Documentos\Grado superior CENEC\2DAM\DesarrolloInterfaces\DesarrolloInterfacesDesarrollo\EditorImagenes\obj\Debug\net6.0-windows\ref\EditorImagenes.dll

@@ -56,7 +56,15 @@
                 <ImageBrush ImageSource="/busqueda.png"/>
             </Button.Background>
         </Button>
-        <TreeView x:Name="treeView_Copy1" Margin="0,69,0,27" HorizontalAlignment="Center" Width="286" Background="White" />
+        <TreeView x:Name="treeView_Copy1" Margin="0,69,0,27" HorizontalAlignment="Center" Width="286" Background="White">
+
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                    <TextBlock Text="{Binding Name}" />
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+
+        </TreeView>
         <Button x:Name="btnGuia" Click="Button_Click" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="423,9,0,0" VerticalAlignment="Top" Height="50" FontFamily="Cambria" Width="50" BorderThickness="0,0,0,0" >
             <Button.Background>
                 <ImageBrush ImageSource="/Interrogacion.png"/>

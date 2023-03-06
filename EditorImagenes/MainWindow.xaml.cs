@@ -18,13 +18,15 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using Path = System.IO.Path;
 using Application = System.Windows.Forms.Application;
+using System.Collections.ObjectModel;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace EditorImagenes
 {
 
-    public partial class MainWindow : Window
+    public partial class MainWindow : System.Windows.Window
     {
-        private double _scale=1.0;
+        private double _scale = 1.0;
         private bool _isMoving;
         private Point? position;
         private double deltaX;
@@ -72,8 +74,9 @@ namespace EditorImagenes
                     try
                     {
                         Process.Start(pdfPath);
-                    }catch(Exception ex)
-    {
+                    }
+                    catch (Exception ex)
+                    {
                         System.Windows.MessageBox.Show("Error al abrir el archivo PDF: " + ex.Message);
                     }
                     break;
@@ -132,5 +135,76 @@ namespace EditorImagenes
             this.imagen.RenderTransform = new TranslateTransform(-offsetX, -offsetY);
         }
 
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            var rootDirectory = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory.Substring(0, AppDomain.CurrentDomain.BaseDirectory.IndexOf("bin")));
+            var miCarpetaPath = Path.Combine(rootDirectory.FullName);
+
+            var root = new Folder { Name = "MiCarpeta" };
+            root.Children = new ObservableCollection<FileSystemItem>();
+
+            foreach (var directory in Directory.GetDirectories(miCarpetaPath))
+            {
+                root.Children.Add(CreateFolder(directory));
+            }
+
+            foreach (var file in Directory.GetFiles(miCarpetaPath))
+            {
+                root.Children.Add(CreateFile(file));
+            }
+
+            treeView_Copy1.ItemsSource = new List<Folder> { root };
+        }
+
+
+
+        public class Root
+        {
+            public string Name { get; set; }
+            public ObservableCollection<string> Children { get; set; }
+        }
+
+        private Folder CreateFolder(string path)
+        {
+            var folder = new Folder { Name = Path.GetFileName(path) };
+            folder.Children = new ObservableCollection<FileSystemItem>();
+
+            foreach (var directory in Directory.GetDirectories(path))
+            {
+                folder.Children.Add(CreateFolder(directory));
+            }
+
+            foreach (var file in Directory.GetFiles(path))
+            {
+                folder.Children.Add(CreateFile(file));
+            }
+
+            return folder;
+        }
+
+        private File CreateFile(string path)
+        {
+            return new File { Name = Path.GetFileName(path), Extension = Path.GetExtension(path) };
+        }
+        public class FileSystemItem
+        {
+            public string Name { get; set; }
+            public ObservableCollection<FileSystemItem> Children { get; set; }
+        }
+
+        public class Folder : FileSystemItem
+        {
+            public Folder()
+            {
+                Children = new ObservableCollection<FileSystemItem>();
+            }
+        }
+
+        public class File : FileSystemItem
+        {
+            public string Extension { get; set; }
+        }
     }
 }
