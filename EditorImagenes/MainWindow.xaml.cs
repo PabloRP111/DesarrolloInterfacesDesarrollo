@@ -42,10 +42,12 @@ namespace EditorImagenes
             {
                 case "bIzquierda":
                     RotationTransform.Angle -= 90;
+                    UpdateTransform();
                     break;
 
                 case "bDerecha":
                     RotationTransform.Angle += 90;
+                    UpdateTransform();
                     break;
 
                 case "btnLupa":
@@ -62,9 +64,11 @@ namespace EditorImagenes
                         image.UriSource = new Uri(rutaArchivo);
                         image.EndInit();
 
+                        _scale = 1.0;
+                        RotationTransform.Angle = 0;
+
                         imagen.Source = image;
-
-
+                        UpdateTransform();
                     }
                     break;
 
@@ -86,54 +90,82 @@ namespace EditorImagenes
                     break;
 
                 case "bZoomMas":
-                    _scale += 0.1;
-                    ScaleTransform scaleTransform = new ScaleTransform(_scale, _scale);
-                    imagen.RenderTransform = scaleTransform;
+                    if (_scale < 4.0)
+                    {
+                        _scale += 0.1;
+                        UpdateTransform();
+                    }
                     break;
 
                 case "bZoomMenos":
-                    _scale -= 0.1;
-                    ScaleTransform scaleTransform2 = new ScaleTransform(_scale, _scale);
-                    imagen.RenderTransform = scaleTransform2;
+                    if (_scale > 0.5)
+                    {
+                        _scale -= 0.1;
+                        UpdateTransform();
+                    }
                     break;
             }
 
 
         }
 
-        //Si se pulsa el ratón
+        private void UpdateTransform()
+        {
+            imagen.RenderTransform = new TransformGroup
+            {
+                Children =
+                {
+                    new ScaleTransform(_scale, _scale),
+                    RotationTransform
+                }
+            };
+        }
+
+        private Point? lastPosition = null;
+        private bool isDragging = false;
+
         private void MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //Se coge la posición del ratón para mover la imagen con él y se setea "isMoving" a true para que MouseMove haga cosas
-            if (position == null)
-                position = imagen.TransformToAncestor(scroll).Transform(new Point(0, 0));
-            var mousePosition = Mouse.GetPosition(scroll);
-            deltaX = mousePosition.X - position.Value.X;
-            deltaY = mousePosition.Y - position.Value.Y;
-            _isMoving = true;
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                lastPosition = e.GetPosition(imagen);
+                isDragging = true;
+                Mouse.Capture(imagen);
+            }
         }
 
-        //Si se deja de pulsar el ratón
-        private void MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            //Se guarda la posición y se setea el "isMoving" a false para que no la líe si se mueve el ratón
-            _currentTT = imagen.RenderTransform as TranslateTransform;
-            _isMoving = false;
-        }
-
-        //Al mover el ratón
         private void MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
         {
-            //Si "isMoving" está en false no hace nada
-            if (!_isMoving) return;
-            //En caso contrario, cambia la posición de la imagen
-            var mousePoint = Mouse.GetPosition(scroll);
+            if (isDragging)
+            {
+                Point newPosition = e.GetPosition(imagen);
+                double deltaX = newPosition.X - lastPosition.Value.X;
+                double deltaY = newPosition.Y - lastPosition.Value.Y;
 
-            var offsetX = (_currentTT == null ? position.Value.X : position.Value.X - _currentTT.X) + deltaX - mousePoint.X;
-            var offsetY = (_currentTT == null ? position.Value.Y : position.Value.Y - _currentTT.Y) + deltaY - mousePoint.Y;
+                var transform = imagen.RenderTransform as TransformGroup;
+                var translate = transform.Children.OfType<TranslateTransform>().FirstOrDefault();
+                if (translate == null)
+                {
+                    translate = new TranslateTransform();
+                    transform.Children.Insert(0, translate);
+                }
 
-            this.imagen.RenderTransform = new TranslateTransform(-offsetX, -offsetY);
+                translate.X += deltaX;
+                translate.Y += deltaY;
+
+                lastPosition = newPosition;
+            }
         }
+
+        private void MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                isDragging = false;
+                Mouse.Capture(null);
+            }
+        }
+
 
         public MainWindow()
         {
