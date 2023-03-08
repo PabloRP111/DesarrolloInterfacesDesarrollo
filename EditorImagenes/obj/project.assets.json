@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jeroc\\.nuget\\packages\\": {}
+    "C:\\Users\\David\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\Grado superior CENEC\\2DAM\\DesarrolloInterfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
+      "projectUniqueName": "C:\\Users\\David\\Desktop\\CENEC\\2DAM\\Desarrollo de interfaces\\2T\\PROYECTO\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
       "projectName": "EditorImagenes",
-      "projectPath": "D:\\Documentos\\Grado superior CENEC\\2DAM\\DesarrolloInterfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
-      "packagesPath": "C:\\Users\\jeroc\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos\\Grado superior CENEC\\2DAM\\DesarrolloInterfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\obj\\",
+      "projectPath": "C:\\Users\\David\\Desktop\\CENEC\\2DAM\\Desarrollo de interfaces\\2T\\PROYECTO\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
+      "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\David\\Desktop\\CENEC\\2DAM\\Desarrollo de interfaces\\2T\\PROYECTO\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jeroc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

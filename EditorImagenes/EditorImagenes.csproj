@@ -14,26 +14,36 @@
     <None Remove="ayuda.png" />
     <None Remove="buscar.png" />
     <None Remove="busqueda.png" />
+    <None Remove="busqueda_hover.png" />
     <None Remove="Captura.png" />
     <None Remove="cerrar-sesion.png" />
     <None Remove="flechaCurvaDerecha.png" />
+    <None Remove="flechaCurvaDerecha_hover.png" />
     <None Remove="flechaCurvaIzquierda.png" />
+    <None Remove="flechaCurvaIzquierda_hover.png" />
     <None Remove="gira-a-la-derecha.png" />
     <None Remove="girar-a-la-izquierda.png" />
     <None Remove="Interrogacion.png" />
+    <None Remove="Interrogacion_hover.png" />
     <None Remove="Placeholder_view_vector.svg.png" />
     <None Remove="Salir.png" />
+    <None Remove="Salir_hover.png" />
     <None Remove="titulo.png" />
     <None Remove="zoomas.png" />
+    <None Remove="zoomas_hover.png" />
     <None Remove="zoomenos.png" />
+    <None Remove="zoomenos_hover.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="busqueda_hover.png" />
     <Resource Include="flechaCurvaDerecha.png" />
+    <Resource Include="flechaCurvaDerecha_hover.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="flechaCurvaIzquierda.png" />
+    <Resource Include="flechaCurvaIzquierda_hover.png" />
     <Resource Include="Interrogacion.png" />
     <Resource Include="Placeholder_view_vector.svg.png" />
   </ItemGroup>
@@ -48,9 +58,16 @@
     <Resource Include="gira-a-la-derecha.png" />
     <Resource Include="girar-a-la-izquierda.png" />
     <Resource Include="Salir.png" />
+    <Resource Include="Salir_hover.png" />
     <Resource Include="titulo.png" />
     <Resource Include="zoomas.png" />
+    <Resource Include="zoomas_hover.png" />
     <Resource Include="zoomenos.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Interrogacion_hover.png" />
+    <Resource Include="zoomenos_hover.png" />
   </ItemGroup>
 
   <ItemGroup>
