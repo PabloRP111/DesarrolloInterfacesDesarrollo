@@ -208,14 +208,17 @@ namespace EditorImagenes
             if (selectedItem != null)
             {
                 string selectedHeader = selectedItem.Name;
-                var rootDirectory = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory.Substring(0, AppDomain.CurrentDomain.BaseDirectory.IndexOf("bin")));
-                var miCarpetaPath = Path.Combine(rootDirectory.FullName, selectedHeader);
-                BitmapImage image = new BitmapImage();
-                image.BeginInit();
-                image.UriSource = new Uri(miCarpetaPath);
-                image.EndInit();
+                if (selectedHeader.EndsWith(".jpg") || selectedHeader.EndsWith(".jpeg") || selectedHeader.EndsWith(".png"))
+                {
+                    var rootDirectory = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory.Substring(0, AppDomain.CurrentDomain.BaseDirectory.IndexOf("bin")));
+                    var miCarpetaPath = Path.Combine(rootDirectory.FullName, selectedHeader);
+                    BitmapImage image = new BitmapImage();
+                    image.BeginInit();
+                    image.UriSource = new Uri(miCarpetaPath);
+                    image.EndInit();
 
-                imagen.Source = image;
+                    imagen.Source = image;
+                }
             }
         }
 

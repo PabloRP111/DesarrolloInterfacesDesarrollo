@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Juan\\.nuget\\packages\\": {}
+    "C:\\Users\\jeroc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juan\\Desktop\\Movimientos\\MadreTopo\\DesarrolloInterfacesDesarrollo-main\\EditorImagenes\\EditorImagenes.csproj",
+      "projectUniqueName": "D:\\Documentos\\Grado superior CENEC\\2DAM\\DesarrolloInterfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
       "projectName": "EditorImagenes",
-      "projectPath": "C:\\Users\\Juan\\Desktop\\Movimientos\\MadreTopo\\DesarrolloInterfacesDesarrollo-main\\EditorImagenes\\EditorImagenes.csproj",
-      "packagesPath": "C:\\Users\\Juan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juan\\Desktop\\Movimientos\\MadreTopo\\DesarrolloInterfacesDesarrollo-main\\EditorImagenes\\obj\\",
+      "projectPath": "D:\\Documentos\\Grado superior CENEC\\2DAM\\DesarrolloInterfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\EditorImagenes.csproj",
+      "packagesPath": "C:\\Users\\jeroc\\.nuget\\packages\\",
+      "outputPath": "D:\\Documentos\\Grado superior CENEC\\2DAM\\DesarrolloInterfaces\\DesarrolloInterfacesDesarrollo\\EditorImagenes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Juan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jeroc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
