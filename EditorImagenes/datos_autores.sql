@@ -8,15 +8,15 @@ constraint fk_grupos_autores (grupo) references grupos(id)
 
 create table grupos(
 id integer primary key,
-nombre_grupo varchar()
+nombre_grupo varchar(30)
 );
 
 
 -grupos-
-insert into grupos(1,'diseño');
-insert into grupos(2,'testing');
-insert into grupos(3,'documentacion');
-insert into grupos(4,'desarrollo');
+insert into grupos values(1,'diseño');
+insert into grupos values(2,'testing');
+insert into grupos values(3,'documentacion');
+insert into grupos values(4,'desarrollo');
 
 
 
