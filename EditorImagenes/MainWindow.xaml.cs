@@ -112,10 +112,10 @@ namespace EditorImagenes
         private void UpdateTransform()
         {
             var transformGroup = new TransformGroup();
-            transformGroup.Children.Add(new ScaleTransform(_scale, _scale));
-            transformGroup.Children.Add(RotationTransform);
             var translateTransform = new TranslateTransform(deltaX, deltaY);
             transformGroup.Children.Add(translateTransform);
+            transformGroup.Children.Add(new ScaleTransform(_scale, _scale));
+            transformGroup.Children.Add(RotationTransform);
             imagen.RenderTransform = transformGroup;
             _currentTT = translateTransform;
         }
@@ -157,8 +157,8 @@ namespace EditorImagenes
             var translateTransform = transform.Children.OfType<TranslateTransform>().FirstOrDefault();
             if (translateTransform != null)
             {
-                translateTransform.X += deltaX;
-                translateTransform.Y += deltaY;
+                translateTransform.X += deltaX/2;
+                translateTransform.Y += deltaY/2;
             }
 
             lastPosition = newPosition;
