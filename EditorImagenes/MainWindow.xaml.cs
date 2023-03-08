@@ -134,28 +134,38 @@ namespace EditorImagenes
             }
         }
 
-        private void MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
+     private void MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
+{
+    if (isDragging)
+    {
+        if (imagen.Source != null)
         {
-            if (isDragging)
+            Point newPosition = e.GetPosition(imagen);
+            double deltaX = newPosition.X - lastPosition.Value.X;
+            double deltaY = newPosition.Y - lastPosition.Value.Y;
+
+            var transform = imagen.RenderTransform as TransformGroup;
+            if (transform == null)
             {
-                Point newPosition = e.GetPosition(imagen);
-                double deltaX = newPosition.X - lastPosition.Value.X;
-                double deltaY = newPosition.Y - lastPosition.Value.Y;
-
-                var transform = imagen.RenderTransform as TransformGroup;
-                var translate = transform.Children.OfType<TranslateTransform>().FirstOrDefault();
-                if (translate == null)
-                {
-                    translate = new TranslateTransform();
-                    transform.Children.Insert(0, translate);
-                }
-
-                translate.X += deltaX;
-                translate.Y += deltaY;
-
-                lastPosition = newPosition;
+                transform = new TransformGroup();
+                var translate = new TranslateTransform();
+                transform.Children.Add(translate);
+                imagen.RenderTransform = transform;
             }
+
+            var translateTransform = transform.Children.OfType<TranslateTransform>().FirstOrDefault();
+            if (translateTransform != null)
+            {
+                translateTransform.X += deltaX;
+                translateTransform.Y += deltaY;
+            }
+
+            lastPosition = newPosition;
         }
+    }
+}
+
+
 
         private void MouseUp(object sender, MouseButtonEventArgs e)
         {
