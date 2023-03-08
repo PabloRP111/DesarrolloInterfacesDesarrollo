@@ -111,15 +111,15 @@ namespace EditorImagenes
 
         private void UpdateTransform()
         {
-            imagen.RenderTransform = new TransformGroup
-            {
-                Children =
-                {
-                    new ScaleTransform(_scale, _scale),
-                    RotationTransform
-                }
-            };
+            var transformGroup = new TransformGroup();
+            transformGroup.Children.Add(new ScaleTransform(_scale, _scale));
+            transformGroup.Children.Add(RotationTransform);
+            var translateTransform = new TranslateTransform(deltaX, deltaY);
+            transformGroup.Children.Add(translateTransform);
+            imagen.RenderTransform = transformGroup;
+            _currentTT = translateTransform;
         }
+
 
         private Point? lastPosition = null;
         private bool isDragging = false;
@@ -141,10 +141,11 @@ namespace EditorImagenes
         if (imagen.Source != null)
         {
             Point newPosition = e.GetPosition(imagen);
-            double deltaX = newPosition.X - lastPosition.Value.X;
-            double deltaY = newPosition.Y - lastPosition.Value.Y;
+            deltaX = newPosition.X - lastPosition.Value.X;
+            deltaY = newPosition.Y - lastPosition.Value.Y;
 
-            var transform = imagen.RenderTransform as TransformGroup;
+
+                    var transform = imagen.RenderTransform as TransformGroup;
             if (transform == null)
             {
                 transform = new TransformGroup();
