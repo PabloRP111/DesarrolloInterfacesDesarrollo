@@ -14,7 +14,7 @@
         <ImageBrush x:Key="bIzquierda" ImageSource="/flechaCurvaIzquierda_hover.png"/>
         <ImageBrush x:Key="zoomMas" ImageSource="/zoomas_hover.png"/>
         <ImageBrush x:Key="zoomMenos" ImageSource="/zoomenos_hover.png"/>
-        <ImageBrush x:Key="salir" ImageSource="/Salir_hover.png"/>
+        <ImageBrush x:Key="salir" ImageSource="/salir_hover.png"/>
 
 
 
@@ -462,10 +462,10 @@
         </Button>
         <Button Style="{DynamicResource salirStyle}"   x:Name="bSalir" Click="Button_Click" VerticalAlignment="Top" Height="50" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="473,9,10,0" BorderThickness="0,0,0,0" Width="50">
             <Button.Background>
-                <ImageBrush ImageSource="/Salir.png"/>
+                <ImageBrush ImageSource="/salir.png"/>
             </Button.Background>
         </Button>
-        <Button Style="{DynamicResource lupaStyle}"  x:Name="btnLupa" Click="Button_Click" VerticalAlignment="Top" Height="50" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="371,10,117,0" BorderThickness="0,0,0,0">
+        <Button Style="{DynamicResource lupaStyle}"  x:Name="btnLupa" Click="Button_Click" VerticalAlignment="Top" Height="50" Width="50" RenderTransformOrigin="1.572,3.157" Grid.Column="1" Margin="371,10,117,0" BorderThickness="0,0,0,0">
             <Button.Background>
                 <ImageBrush ImageSource="/busqueda.png"/>
             </Button.Background>
