@@ -36,9 +36,9 @@
         <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
         <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
         <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
-        
-        
-        
+
+
+
         <Style x:Key="lupaStyle" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
             <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
@@ -94,10 +94,10 @@
         <SolidColorBrush x:Key="Button.Disabled.Background1" Color="#FFF4F4F4"/>
         <SolidColorBrush x:Key="Button.Disabled.Border1" Color="#FFADB2B5"/>
         <SolidColorBrush x:Key="Button.Disabled.Foreground1" Color="#FF838383"/>
-        
-        
-        
-        
+
+
+
+
         <Style x:Key="ayudaStyle" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual1}"/>
             <Setter Property="Background" Value="{StaticResource Button.Static.Background1}"/>
@@ -153,8 +153,8 @@
         <SolidColorBrush x:Key="Button.Disabled.Background2" Color="#FFF4F4F4"/>
         <SolidColorBrush x:Key="Button.Disabled.Border2" Color="#FFADB2B5"/>
         <SolidColorBrush x:Key="Button.Disabled.Foreground2" Color="#FF838383"/>
-        
-        
+
+
         <Style x:Key="derechaStyle" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual2}"/>
             <Setter Property="Background" Value="{StaticResource Button.Static.Background2}"/>
@@ -210,9 +210,9 @@
         <SolidColorBrush x:Key="Button.Disabled.Background3" Color="#FFF4F4F4"/>
         <SolidColorBrush x:Key="Button.Disabled.Border3" Color="#FFADB2B5"/>
         <SolidColorBrush x:Key="Button.Disabled.Foreground3" Color="#FF838383"/>
-        
-        
-        
+
+
+
         <Style x:Key="izquierdaStyle" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual3}"/>
             <Setter Property="Background" Value="{StaticResource Button.Static.Background3}"/>
@@ -268,8 +268,8 @@
         <SolidColorBrush x:Key="Button.Disabled.Background4" Color="#FFF4F4F4"/>
         <SolidColorBrush x:Key="Button.Disabled.Border4" Color="#FFADB2B5"/>
         <SolidColorBrush x:Key="Button.Disabled.Foreground4" Color="#FF838383"/>
-        
-        
+
+
         <Style x:Key="zoomMasStyle" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual4}"/>
             <Setter Property="Background" Value="{StaticResource Button.Static.Background4}"/>
@@ -325,8 +325,8 @@
         <SolidColorBrush x:Key="Button.Disabled.Background5" Color="#FFF4F4F4"/>
         <SolidColorBrush x:Key="Button.Disabled.Border5" Color="#FFADB2B5"/>
         <SolidColorBrush x:Key="Button.Disabled.Foreground5" Color="#FF838383"/>
-        
-        
+
+
         <Style x:Key="zoomMenosStyle" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual5}"/>
             <Setter Property="Background" Value="{StaticResource Button.Static.Background5}"/>
@@ -382,8 +382,8 @@
         <SolidColorBrush x:Key="Button.Disabled.Background6" Color="#FFF4F4F4"/>
         <SolidColorBrush x:Key="Button.Disabled.Border6" Color="#FFADB2B5"/>
         <SolidColorBrush x:Key="Button.Disabled.Foreground6" Color="#FF838383"/>
-        
-        
+
+
         <Style x:Key="salirStyle" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual6}"/>
             <Setter Property="Background" Value="{StaticResource Button.Static.Background6}"/>
@@ -470,7 +470,7 @@
                 <ImageBrush ImageSource="/busqueda.png"/>
             </Button.Background>
         </Button>
-        <TreeView x:Name="treeView_Copy1" Margin="0,69,0,27" HorizontalAlignment="Center" Width="286" Background="White" SelectedItemChanged="seleccionImagen">
+        <TreeView x:Name="treeView_Copy1" Margin="0,69,0,120" HorizontalAlignment="Center" Width="286" Background="White" SelectedItemChanged="seleccionImagen">
 
             <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate ItemsSource="{Binding Children}">
@@ -485,6 +485,15 @@
             </Button.Background>
         </Button>
         <Image HorizontalAlignment="Left" Height="48" Margin="40,10,0,0" VerticalAlignment="Top" Width="492" Source="/titulo.png" Grid.ColumnSpan="2"/>
+        <TreeView x:Name="treeView_Copy2" Margin="19,416,0,27" HorizontalAlignment="Left" Width="348" Background="White" SelectedItemChanged="seleccionImagen">
+
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                    <TextBlock Text="{Binding Name}" />
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+
+        </TreeView>
 
 
 

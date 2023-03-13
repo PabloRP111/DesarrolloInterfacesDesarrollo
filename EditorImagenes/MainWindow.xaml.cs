@@ -95,7 +95,7 @@ namespace EditorImagenes
                     // Se inicia el proceso de la aplicación predeterminada para abrir el archivo PDF
                     try
                     {
-                        Process.Start(pdfPath);
+                        Process.Start("explorer.exe", "\"" + pdfPath + "\"");
                     }
                     catch (Exception ex)
                     {
