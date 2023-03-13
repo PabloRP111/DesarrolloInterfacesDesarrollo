@@ -470,7 +470,7 @@
                 <ImageBrush ImageSource="/busqueda.png"/>
             </Button.Background>
         </Button>
-        <TreeView x:Name="treeView_Copy1" Margin="0,69,0,120" HorizontalAlignment="Center" Width="286" Background="White" SelectedItemChanged="seleccionImagen">
+        <TreeView x:Name="treeView_Copy1" Margin="0,69,0,226" HorizontalAlignment="Center" Width="286" Background="White" SelectedItemChanged="seleccionImagen">
 
             <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate ItemsSource="{Binding Children}">
@@ -485,7 +485,7 @@
             </Button.Background>
         </Button>
         <Image HorizontalAlignment="Left" Height="48" Margin="40,10,0,0" VerticalAlignment="Top" Width="492" Source="/titulo.png" Grid.ColumnSpan="2"/>
-        <TreeView x:Name="treeView_Copy2" Margin="19,416,0,27" HorizontalAlignment="Left" Width="348" Background="White" SelectedItemChanged="seleccionImagen">
+        <TreeView x:Name="treeView_2" Margin="19,309,0,27" HorizontalAlignment="Left" Width="142" Background="White" SelectedItemChanged="seleccionImagen">
 
             <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate ItemsSource="{Binding Children}">
@@ -494,6 +494,16 @@
             </TreeView.ItemTemplate>
 
         </TreeView>
+        <TreeView x:Name="treeView_3" Margin="215,309,0,27" HorizontalAlignment="Left" Width="142" Background="White" SelectedItemChanged="seleccionImagen" RenderTransformOrigin="0.975,0.443">
+
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                    <TextBlock Text="{Binding Name}" />
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+
+        </TreeView>
+        <TextBox HorizontalAlignment="Center" Margin="0,278,0,0" TextWrapping="Wrap" Text="Made by:" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.067,0.551" FontSize="18" FontFamily="Segoe UI Semilight" TextAlignment="Center" FontWeight="Bold"/>
 
 
 

@@ -23,6 +23,21 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace EditorImagenes
 {
+
+    public class Grupo
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public ObservableCollection<Alumno> Alumnos { get; set; }
+    }
+
+    public class Alumno
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public int GrupoId { get; set; }
+    }
+
     /// <summary>
     /// 
     /// Esta clase se encarga de controlar todos los elementos que modifican la imagen
@@ -31,6 +46,8 @@ namespace EditorImagenes
 
     public partial class MainWindow : System.Windows.Window
     {
+        private ObservableCollection<Grupo> grupos;
+
         // Variables de instancia para escala, movimiento, posición y transformación
         private double _scale = 1.0;
         private bool _isMoving;
@@ -265,6 +282,10 @@ namespace EditorImagenes
 
             // Se suscribe al evento SelectedItemChanged del TreeView para que se llame al método "seleccionImagen" cada vez que se selecciona un elemento
             treeView_Copy1.SelectedItemChanged += new RoutedPropertyChangedEventHandler<object>(seleccionImagen);
+        
+            //Acceso a datos
+
+        
         }
 
         // Este método se llama cada vez que se selecciona un elemento en el TreeView
