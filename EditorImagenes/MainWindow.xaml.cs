@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Forms;
+using System.Data.SQLite;
 using System.Diagnostics;
 using Path = System.IO.Path;
 using Application = System.Windows.Forms.Application;
@@ -282,10 +283,127 @@ namespace EditorImagenes
 
             // Se suscribe al evento SelectedItemChanged del TreeView para que se llame al método "seleccionImagen" cada vez que se selecciona un elemento
             treeView_Copy1.SelectedItemChanged += new RoutedPropertyChangedEventHandler<object>(seleccionImagen);
-        
-            //Acceso a datos
 
-        
+            //Acceso a datos
+            conectarDB();
+            rellenarTreeViewDB();
+
+        }
+
+        public void rellenarTreeViewDB()
+        {
+
+
+            var arrayNombres = new List<string>();
+            // Conexión a la base de datos SQLite
+            string connectionString = "Data Source=miBaseDeDatos.sqlite";
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                // Abrir la conexión
+                connection.Open();
+
+                // Consulta SQL para obtener los datos de la tabla "autores"
+                string query = "SELECT * FROM autores";
+
+                // Crear un comando SQL y establecer su conexión y consulta
+                SQLiteCommand command = new SQLiteCommand(query, connection);
+
+                // Ejecutar la consulta y obtener un lector de datos
+                SQLiteDataReader reader = command.ExecuteReader();
+
+                // Recorrer los registros y agregarlos al array de nombres
+                while (reader.Read())
+                {
+                    // Obtener los valores de las columnas "nombre", "apellido" y "grupo"
+                    string nombre = reader.GetString(1);
+                    string apellido = reader.GetString(2);
+
+                    arrayNombres.Add(nombre + " " + apellido);
+                }
+
+                // Cerrar el lector de datos y la conexión
+                reader.Close();
+                connection.Close();
+            }
+
+            // Convertir la lista de nombres en una colección observable
+            var nombresObservable = new ObservableCollection<string>(arrayNombres);
+
+            // Establecer la colección observable como el DataContext del TreeView
+            treeView_2.ItemsSource = nombresObservable;
+
+
+        }
+
+
+        public void conectarDB()
+        {
+            string connectionString = "Data Source=miBaseDeDatos.sqlite";
+            SQLiteConnection connection = new SQLiteConnection(connectionString);
+            connection.Open();
+
+            string[] sentenciasSql = new string[]
+            {
+                 "DROP TABLE IF EXISTS autores",
+                 "DROP TABLE IF EXISTS grupos",
+
+                @"CREATE TABLE grupos (
+                    id INTEGER PRIMARY KEY,
+                    nombre_grupo VARCHAR(30)
+                )",
+
+                @"CREATE TABLE autores (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    nombre VARCHAR(30) NOT NULL,
+                    apellido VARCHAR(30) NOT NULL,
+                    grupo INTEGER NOT NULL,
+                    CONSTRAINT fk_grupos_autores FOREIGN KEY (grupo) REFERENCES grupos(id)
+                )",
+
+                "INSERT INTO grupos VALUES(1,'diseño')",
+                "INSERT INTO grupos VALUES(2,'testing')",
+                "INSERT INTO grupos VALUES(3,'documentacion')",
+                "INSERT INTO grupos VALUES(4,'desarrollo')",
+
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES('Abel','Riquelme',1);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES('Alex','Lopez',1);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES('Alejandro','Asencio',1);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES('David','Toledo',1);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES('Christian','Christian',1);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES('Alejandro','Lopez',1);",
+
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES('Leticia','Garcia',2);",
+
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES('Marcos','García',3);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES('Carlos','Martín',3);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES('Juan Jose','Medina',3);",
+
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES ('Jero', 'Casares', 4);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES ('David', 'López', 4);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES ('Javier', 'Vaquero', 4);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES ('Alexis', 'García', 4);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES ('Juan', 'Carmona', 4);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES ('Joaquín', 'Moreno', 4);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES ('Antonio Jesus', 'Rodriguez', 4);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES ('Pablo', 'Rosas', 4);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES ('Francisco José', 'Jiménez', 4);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES ('Juan', 'Tortosa', 4);",
+                "INSERT INTO autores (nombre, apellido, grupo) VALUES ('Jenaro', 'Leal', 4);"
+        };
+
+            using (SQLiteTransaction transaction = connection.BeginTransaction())
+            {
+                foreach (string sentencia in sentenciasSql)
+                {
+                    SQLiteCommand command = new SQLiteCommand(sentencia, connection);
+                    command.ExecuteNonQuery();
+                }
+                transaction.Commit();
+            }
+
+            connection.Close();
+
+
         }
 
         // Este método se llama cada vez que se selecciona un elemento en el TreeView
